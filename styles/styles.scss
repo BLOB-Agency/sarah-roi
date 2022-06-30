@@ -251,7 +251,7 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             opacity: 0%;
 
             
@@ -271,6 +271,9 @@ header {
               p{
                 font-weight: 300;
               }
+              .block{
+                width: 30%;
+              }
             }
         }
 
@@ -279,10 +282,6 @@ header {
           width: 100%;
           transform: translateY(-18%);
           filter: grayscale(100%);
-          &:hover, a{
-            animation: img-colorized 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-              both;
-          }
         }
         &-3 {
           img {
@@ -452,12 +451,17 @@ header {
         font-weight: 600;
         font-size: 20px;
       }
-      h3, span{
+      h3, a{
         color: black;
       }
-      span{
-        font-weight: 400;
+      a{
+        font-weight: 500;
         font-size: 16px;
+        text-decoration: none;
+        &:hover{
+            color: $secondary;
+          
+        }
       }
       &-header{
         display: flex;
