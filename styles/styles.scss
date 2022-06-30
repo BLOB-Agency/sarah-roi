@@ -12,15 +12,24 @@ $gradient2: linear-gradient(
   rgba(27, 33, 41, 1) 19%,
   rgba(82, 96, 124, 1) 100%
 );
+
+@font-face{
+  font-family: "Raleway", sans-serif;
+  src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+  font-family: "Raleway-italic", sans-serif;
+  src: url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
 @font-face {
-  font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-family: "Montserrat", 'Raleway',  sans-serif;
   src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
-  font-family: "Montserrat-italic", Courier New, Courier, monospace;
+  font-family: "Montserrat-italic", Courier New, Courier, sans-serif;
   src: url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+  
 }
 
+
 * {
-  font-family: "Montserrat", "Courier New", Courier, monospace;
+  font-family: "Montserrat", 'Raleway',  monospace;
   font-weight: 300;
   color: white;
 }
