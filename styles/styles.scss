@@ -192,21 +192,21 @@ header {
     article {
       display: flex;
       justify-content: space-between;
-      height: 200px;
+      height: 250px;
       margin: 50px 0;
       .legend {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 35%;
+        width: 30%;
         h3 {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 500;
           color: $secondary;
         }
         p {
           margin-block-start: 0;
-          font-size: 16px;
+          font-size: 18px;
           strong {
             font-weight: 500;
           }
@@ -231,13 +231,14 @@ header {
         }
       }
       .img {
-        width: 60%;
+        width: 65%;
         overflow: hidden;
         animation: box-pop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         position: relative;
-        p{
+        
+        &-overlay{
             position: absolute;
-            background-color: rgba(27, 33, 41, 0.5);
+            background-color: rgba(27, 33, 41, 0.8);
             font-weight: 500;
             z-index: 1;
             top: 50%;
@@ -248,8 +249,29 @@ header {
             height: 100%;
             margin: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            opacity: 0%;
+
+            
+            h4{
+              font-weight: 600;
+              font-weight: 20px;
+            }
+            
+            &-legend{
+              display: flex;
+              justify-content: space-evenly;
+              padding: 5px;
+              h5{
+                font-weight: 500;
+                font-size: 18px;
+              }
+              p{
+                font-weight: 300;
+              }
+            }
         }
 
         img {
@@ -268,6 +290,12 @@ header {
           }
         }
       }
+      .img:hover > .img-overlay{
+        animation: expertise-overlay 0.3s forwards;
+    }
+    .img:focus > .img-overlay{
+      animation: expertise-overlay 0.3s forwards;
+  }
     }
   }
   &__hero-meet{
@@ -404,7 +432,6 @@ header {
     gap: 20px;
 
     &-left{
-      // width: 65%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -497,5 +524,13 @@ footer {
   100% {
     box-shadow: 0px 0px 7px 0px $gradient;
     filter: grayscale(25%);
+  }
+}
+@keyframes expertise-overlay {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
   }
 }
