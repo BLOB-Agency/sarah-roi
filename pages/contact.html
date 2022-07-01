@@ -1,102 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/e32dbefaf0.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Sarah Roi</title>
-  </head>
-  <body>
-    <header class="container">
-      <a href="../index.html" class="container-title">
-        <h1>Sarah Roi.</h1>
-      </a>
-      <nav>
-        <a href="./meet.html"> MEET SARAH</a>
-        <a href="./learning.html"> LEARNING </a>
-        <a href="./references.html"> REFERENCES </a>
-      </nav>
-      <div class="container-contact-btn">
-        <a href="#"> CONTACT </a>
-      </div>
-      <div class="burger-menu hidden">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
-    <main class="container container__learning">
-      <div>
-          <h2>EXEMPLES DE PRODUCTION.</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <script src="https://kit.fontawesome.com/e32dbefaf0.js" crossorigin="anonymous"></script>
+  <title>Sarah Roi</title>
+</head>
+
+<body>
+  <header class="container">
+    <a href="../index.html" class="container-title">
+      <h1>Sarah Roi.</h1>
+    </a>
+    <nav>
+      <a href="./meet.html"> MEET SARAH</a>
+      <a href="./learning.html"> LEARNING </a>
+      <a href="./references.html"> REFERENCES </a>
+    </nav>
+    <div class="container-contact-btn">
+      <a href="#"> CONTACT </a>
+    </div>
+    <div class="burger-menu hidden">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <main class="container container__contact">
+    <div class="container__contact-title">
+      <h2>
+        UN PROJET ?
+      </h2>
+      <span>
+        Parlons-en.
+      </span>
+    </div>
+    <div class="container__contact-main">
+      <form class="form-contact" id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+        action="https://formspree.io/f/{form_id}" method="post">
+        <div class="form-contact-container">
+          <label for="name">Prénom & Nom</label>
+          <input type="text" name="name" id="">
         </div>
-        <div class="container__production">
-          <article class="box-production">
-              <div class="box-production-img">
-                  <img src="../medias/learning/milad-fakurian-58Z17lnVS4U-unsplash.jpg" alt="">
-              </div>
-              <div class="box-production-legend">
-                  <h3>POINT-CLÉ 1</h3>
-                  <p>Ce qu'est apprendre</p>
-              </div>
-          </article>
-          <article class="box-production">
-            <div class="box-production-img">
-                <img src="../medias/learning/milad-fakurian-58Z17lnVS4U-unsplash.jpg" alt="">
-            </div>
-            <div class="box-production-legend">
-                <h3>POINT-CLÉ 4</h3>
-                <p>Quelques règles fondamentales de la mémorisation</p>
-            </div>
-        </article>
-        <article class="box-production">
-          <div class="box-production-img">
-              <img src="../medias/learning/decision.jpeg" alt="">
-          </div>
-          <div class="box-production-legend">
-              <h3>LES BIAIS</h3>
-              <p>De la prise de décisions</p>
-          </div>
-      </article>
-      <article class="box-production">
-        <div class="box-production-img">
-            <img src="../medias/learning/decision.jpeg" alt="">
+        <div class="form-contact-container">
+          <label for="mail">Adresse email</label>
+          <input type="email">
         </div>
-        <div class="box-production-legend">
-            <h3>TEXT</h3>
-            <p>Lorem ipsum dolor sit amet </p>
+        <div class="form-contact-container">
+          <label for="message">Message</label>
+          <textarea name="message" id="" cols="30" rows="7"></textarea>
         </div>
-    </article>
-    <article class="box-production">
-      <div class="box-production-img">
-          <img src="../medias/learning/decision.jpeg" alt="">
-      </div>
-      <div class="box-production-legend">
-          <h3>TEXT</h3>
-          <p>Lorem ipsum dolor sit amet </p>
-      </div>
-  </article>
+        <div class="form-btn">
+          <input  type="submit" value="ENVOYER À SARAH !">
         </div>
-    </main>
-    <footer>
-      <a href="mailto:sarahroi@outlook.fr" class="icon">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/sarah-roi" class="icon">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a
-        href="https://twitter.com/RoiSarah?s=20&t=YQx77do_oo_f9FFRO-gQ6Q"
-        class="icon"
-      >
-        <i class="fab fa-twitter"></i>
-      </a>
-    </footer>
-    <script src="../utils/var.js"></script>
-    <script src="../utils/menu.js"></script>
-  </body>
+      </form>
+      <aside>
+        <div>
+          <h3>CONTACT</h3>
+          <span>sarahroi@outlook.fr</span><br>
+          <span>+33 6 34 64 54 85</span><br>
+          <span>À bientôt ! 👋</span>
+        </div>
+      </aside>
+      
+    </div>
+  </main>
+  <div class="box-img">
+    <img src="../medias/contact/contact.jpg" alt="">
+        </div>
+  
+  <footer>
+    <a href="mailto:sarahroi@outlook.fr" class="icon">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sarah-roi" class="icon">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a
+      href="https://twitter.com/RoiSarah?s=20&t=YQx77do_oo_f9FFRO-gQ6Q"
+      class="icon"
+    >
+      <i class="fab fa-twitter"></i>
+    </a>
+  </footer>
+  <script src="../utils/var.js"></script>
+  <script src="../utils/menu.js"></script>
+</body>
+
 </html>
