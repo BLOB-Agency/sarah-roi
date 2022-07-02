@@ -1,7 +1,7 @@
 // Fonts: Montserrat
 $primary: #1b2129;
 $secondary: #52607c;
-$tertiary : #262f41;
+$tertiary: #262f41;
 $gradient: linear-gradient(
   138deg,
   rgba(27, 33, 41, 1) 19%,
@@ -49,7 +49,7 @@ $gradient2: linear-gradient(
   font-display: swap;
   font-style: normal;
 }
-@font-face{
+@font-face {
   font-family: "Raleway", sans-serif;
   src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
   font-family: "Raleway-italic", sans-serif;
@@ -57,7 +57,7 @@ $gradient2: linear-gradient(
 }
 
 * {
-  font-family: "ClashDisplay-Variable", 'Raleway', sans-serif, monospace;
+  font-family: "ClashDisplay-Variable", "Raleway", sans-serif, monospace;
   font-weight: 300;
   color: white;
 }
@@ -83,7 +83,7 @@ header {
     margin-left: 2%;
     min-width: 150px;
     h1 {
-      font-family: "ClashDisplay-Variable", 'Raleway',  monospace;
+      font-family: "ClashDisplay-Variable", "Raleway", monospace;
       font-size: 26px;
       font-weight: 600;
       font-style: italic;
@@ -232,42 +232,42 @@ header {
         overflow: hidden;
         animation: box-pop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         position: relative;
-        &-overlay{
-            position: absolute;
-            background-color: rgba(27, 33, 41, 0.8);
-            font-weight: 500;
-            z-index: 1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            margin: 0;
+        &-overlay {
+          position: absolute;
+          background-color: rgba(27, 33, 41, 0.8);
+          font-weight: 500;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          opacity: 0%;
+          h4 {
+            font-weight: 600;
+            font-weight: 20px;
+          }
+          &-legend {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            opacity: 0%;
-            h4{
-              font-weight: 600;
-              font-weight: 20px;
+            justify-content: space-evenly;
+            padding: 5px;
+            h5 {
+              font-weight: 500;
+              font-size: 18px;
             }
-            &-legend{
-              display: flex;
-              justify-content: space-evenly;
-              padding: 5px;
-              h5{
-                font-weight: 500;
-                font-size: 18px;
-              }
-              p{
-                font-weight: 300;
-              }
-              .block{
-                width: 30%;
-              }
+            p {
+              font-weight: 300;
             }
+            .block {
+              width: 30%;
+            }
+          }
         }
         img {
           object-fit: cover !important;
@@ -281,283 +281,292 @@ header {
           }
         }
       }
-      .img:hover > .img-overlay{
+      .img:hover > .img-overlay {
         animation: expertise-overlay 0.3s forwards;
-    }
-    .img:focus > .img-overlay{
-      animation: expertise-overlay 0.3s forwards;
-  }
-  .img{
-    @media (hover: none) {
-      >.img-overlay{
+      }
+      .img:focus > .img-overlay {
         animation: expertise-overlay 0.3s forwards;
+      }
+      .img {
+        @media (hover: none) {
+          > .img-overlay {
+            animation: expertise-overlay 0.3s forwards;
+          }
+        }
       }
     }
   }
-    }
-  }
-  &__hero-meet{
+  &__hero-meet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    .circle-bg{
-        display: flex;
-        justify-content: flex-end;
-        background-color: $primary;
-        border-radius: 50%;
-        width: 400px;
-        height: 400px;
-        box-shadow: -13px -1px 1px $tertiary;
-        img{
-            min-width: 50%;
-            min-height: 50%;
-        }
+    .circle-bg {
+      display: flex;
+      justify-content: flex-end;
+      background-color: $primary;
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      box-shadow: -13px -1px 1px $tertiary;
+      img {
+        min-width: 50%;
+        min-height: 50%;
+      }
     }
-    .legend{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-         p :first-of-type{
-            font-size: 20px;
-        }
-        strong{
-            font-weight: 500;
-            font-style: italic;
-        }
-        p:last-of-type{
-            font-size: 14px;
-            font-style: italic;
-        }
+    .legend {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p :first-of-type {
+        font-size: 20px;
+      }
+      strong {
+        font-weight: 500;
+        font-style: italic;
+      }
+      p:last-of-type {
+        font-size: 14px;
+        font-style: italic;
+      }
     }
   }
-  &__theme{
+  &__theme {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
   }
-  .box-theme{
+  .box-theme {
     display: flex;
     flex-direction: column;
     width: 30%;
     margin-top: 50px;
-    &-header{
-        display: flex;
-        flex-direction: row;
-        h3{
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        img{
-            width: 40px;
-            height: 40px;
-        }
+    &-header {
+      display: flex;
+      flex-direction: row;
+      h3 {
+        margin-left: 20px;
+        font-weight: 500;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
     }
-    &-legend{
-        font-size: 16px;
-        strong{
-            font-weight: 500;
-        }
+    &-legend {
+      font-size: 16px;
+      strong {
+        font-weight: 500;
+      }
     }
   }
-  &__country{
+  &__country {
     display: flex;
-    aside{
+    aside {
       width: 30%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      .box-country{
+      .box-country {
         margin-top: 30px;
       }
-      h3{
+      h3 {
         font-weight: 600;
         margin: 0;
       }
-      p{
+      p {
         font-weight: 400;
       }
     }
-    &-img{
+    &-img {
       width: 70%;
       overflow: hidden;
-      img{
-       object-fit: cover;
-       width: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
       }
     }
   }
-  &__learning{
+  &__learning {
     margin: 5% 4%;
   }
-  &__production{
+  &__production {
     display: flex;
     flex-wrap: wrap;
-    gap:5%;
-  
-    .box-production{
+    gap: 5%;
+
+    .box-production {
       display: flex;
       flex-direction: column;
       width: 30%;
       margin-top: 40px;
       min-width: 250px;
-      a{
+      cursor: pointer;
+      a {
         text-decoration: none;
       }
 
-      &-img{
+      &-img {
         overflow: hidden;
-        img{
+        img {
           width: 100%;
           object-fit: cover;
           border-radius: 2%;
         }
       }
-      &-legend{
-        h3{
+      &-legend {
+        h3 {
           margin-block-end: 0;
           font-weight: 500;
         }
-        p{
+        p {
           margin: 0;
         }
       }
     }
   }
-  &-ref{
+  &-ref {
     margin: 5% 4%;
   }
-  &__reference{
+  &__reference {
     display: flex;
     gap: 20px;
 
-    &-left{
+    &-left {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 10px;
-      .bottom{
+      .bottom {
         display: flex;
         gap: 10px;
         justify-content: space-between;
         width: 100%;
       }
-        .box-reference{
+      .box-reference {
         background-color: white;
         padding: 15px;
         width: 100%;
         display: flex;
         flex-direction: column;
-      h3{
-        font-weight: 600;
-        font-size: 20px;
-      }
-      h3,span, a{
-        color: black;
-      }
-      a{
-        font-weight: 500;
-        font-size: 16px;
-        text-decoration: none;
-        &:hover{
-            color: $secondary;
+        h3 {
+          font-weight: 600;
+          font-size: 20px;
         }
-      }
-      &-header{
-        display: flex;
-        align-items: center;
-        span, img{
-          margin-left: 10px;
+        h3,
+        span,
+        a {
+          color: black;
         }
-        span{
+        a {
           font-weight: 500;
+          font-size: 16px;
+          text-decoration: none;
+          &:hover {
+            color: $secondary;
+          }
         }
-        img{
-          width: 80px;
+        &-header {
+          display: flex;
+          align-items: center;
+          span,
+          img {
+            margin-left: 10px;
+          }
+          span {
+            font-weight: 500;
+          }
+          img {
+            width: 80px;
+          }
         }
-      }
-      &-legend{
-        display: flex;
-        flex-direction: column;
+        &-legend {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
-  }
-    &-right{
+    &-right {
       overflow: hidden;
       object-fit: cover;
     }
   }
-  &__contact{
+  &__contact {
     margin: 4%;
-    &-title{
+    &-title {
       display: flex;
       align-items: baseline;
-      span{
+      span {
         font-weight: 500;
         margin-left: 10px;
       }
     }
-    &-main{
+    &-main {
       display: flex;
       justify-content: space-between;
       gap: 5%;
-      aside{
+      aside {
         width: 40%;
         display: flex;
         flex-direction: column;
-        h3{
+        h3 {
           font-size: 22px;
           font-weight: 500;
         }
       }
-      .form-contact{
+      .form-contact {
         display: flex;
         flex-direction: column;
         background-color: $primary;
         width: 70%;
         align-items: center;
         padding: 30px 30px;
-        &-container{
+        &-container {
           display: flex;
           flex-direction: column;
           margin: 15px 0;
           width: 90%;
-          label{
+          label {
             font-weight: 500;
           }
-          input, textarea{
+          input,
+          textarea {
             background-color: black;
             border: solid 1px white;
-            
           }
-          input{
+          input {
             height: 30px;
-          } 
+          }
         }
-        .form-btn{
+        .form-btn {
           top: 15%;
           left: -20%;
           position: relative;
-          input{
+          input {
             padding: 20px 20px;
             color: black;
             font-weight: 600;
-          } 
+          }
         }
       }
     }
   }
-  &__prod{
+  &__prod {
     margin: 5% 4%;
-    // margin: 0;
-    // z-index: 6;
-    // position: fixed;
-    // position: fixed;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     width: 90%;
-    .prod-box{
+    .arrow-box {
+      margin: 30px 0;
+
+      .fa-chevron-circle-left {
+        font-size: 30px;
+        cursor: pointer;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    .prod-box {
       display: flex;
       top: 0%;
       left: 00%;
@@ -565,40 +574,39 @@ header {
       gap: 10%;
       margin-bottom: 15px;
 
-     
-      &-img{
+      &-img {
         width: 40% !important;
         overflow: hidden;
-        img{
+        img {
           width: 100%;
           overflow: hidden;
           height: auto;
           object-fit: cover;
         }
       }
-        aside{
-          width: 50% !important;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          h3{
-            font-weight: 600;
-            font-size: 24px;
-            margin-block-end: 0;
-          }
-          span{
-            font-size: 18px;
-          }
-          em{
-            font-weight: 500;
-          }
+      aside {
+        width: 50% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+          font-weight: 600;
+          font-size: 24px;
+          margin-block-end: 0;
         }
+        span {
+          font-size: 18px;
+        }
+        em {
+          font-weight: 500;
+        }
+      }
     }
-    .prod-btn{
+    .prod-btn {
       display: flex;
       justify-content: flex-end;
-      
-      a{
+
+      a {
         width: 50% !important;
         text-decoration: none;
         background-color: white;
@@ -607,23 +615,13 @@ header {
         text-align: center;
         padding: 10px 5px;
         font-weight: 500;
-        &:hover{
+        &:hover {
           background: $gradient;
           color: white;
         }
-        
       }
     }
-    
   }
-}
-.modal-bg{
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 5;
-  position: fixed;
-  top: 0;
 }
 footer {
   background-color: $primary;
@@ -642,17 +640,17 @@ footer {
     }
   }
 }
-.divider-ban{
-    width: 100%;
-    height: 100px;
-    background-color: $primary;
+.divider-ban {
+  width: 100%;
+  height: 100px;
+  background-color: $primary;
 }
-.box-img{
+.box-img {
   z-index: -1;
   position: absolute;
   top: 50%;
   left: 55%;
-  img{
+  img {
     object-fit: cover;
     max-width: 300px;
     height: auto;
@@ -664,22 +662,12 @@ footer {
 .hidden {
   display: none !important;
 }
-@keyframes img-colorized {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    filter: grayscale(100%);
-  }
-  100% {
-    box-shadow: 0px 0px 7px 0px $gradient;
-    filter: grayscale(25%);
-  }
-}
+
 @keyframes expertise-overlay {
-  0%{
+  0% {
     opacity: 0%;
   }
-  100%{
+  100% {
     opacity: 100%;
   }
-
 }

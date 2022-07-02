@@ -30,7 +30,7 @@
 }
 
 * {
-  font-family: "ClashDisplay-Variable", 'Raleway', sans-serif, monospace;
+  font-family: "ClashDisplay-Variable", "Raleway", sans-serif, monospace;
   font-weight: 300;
   color: white;
 }
@@ -67,7 +67,7 @@ header .container-title {
 }
 
 header .container-title h1 {
-  font-family: "ClashDisplay-Variable", 'Raleway',  monospace;
+  font-family: "ClashDisplay-Variable", "Raleway", monospace;
   font-size: 26px;
   font-weight: 600;
   font-style: italic;
@@ -549,6 +549,7 @@ header nav a {
   width: 30%;
   margin-top: 40px;
   min-width: 250px;
+  cursor: pointer;
 }
 
 .container__production .box-production a {
@@ -628,7 +629,9 @@ header nav a {
   font-size: 20px;
 }
 
-.container__reference-left .box-reference h3, .container__reference-left .box-reference span, .container__reference-left .box-reference a {
+.container__reference-left .box-reference h3,
+.container__reference-left .box-reference span,
+.container__reference-left .box-reference a {
   color: black;
 }
 
@@ -651,7 +654,8 @@ header nav a {
           align-items: center;
 }
 
-.container__reference-left .box-reference-header span, .container__reference-left .box-reference-header img {
+.container__reference-left .box-reference-header span,
+.container__reference-left .box-reference-header img {
   margin-left: 10px;
 }
 
@@ -755,7 +759,8 @@ header nav a {
   font-weight: 500;
 }
 
-.container__contact-main .form-contact-container input, .container__contact-main .form-contact-container textarea {
+.container__contact-main .form-contact-container input,
+.container__contact-main .form-contact-container textarea {
   background-color: black;
   border: solid 1px white;
 }
@@ -779,6 +784,19 @@ header nav a {
 .container__prod {
   margin: 5% 4%;
   width: 90%;
+}
+
+.container__prod .arrow-box {
+  margin: 30px 0;
+}
+
+.container__prod .arrow-box .fa-chevron-circle-left {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container__prod .arrow-box .fa-chevron-circle-left:hover {
+  color: #52607c;
 }
 
 .container__prod .prod-box {
@@ -860,15 +878,6 @@ header nav a {
   color: white;
 }
 
-.modal-bg {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 5;
-  position: fixed;
-  top: 0;
-}
-
 footer {
   background-color: #1b2129;
   display: -webkit-box;
@@ -919,36 +928,6 @@ footer .icon:hover {
 
 .hidden {
   display: none !important;
-}
-
-@-webkit-keyframes img-colorized {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 7px 0px linear-gradient(138deg, #1b2129 19%, #52607c 100%);
-            box-shadow: 0px 0px 7px 0px linear-gradient(138deg, #1b2129 19%, #52607c 100%);
-    -webkit-filter: grayscale(25%);
-            filter: grayscale(25%);
-  }
-}
-
-@keyframes img-colorized {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 7px 0px linear-gradient(138deg, #1b2129 19%, #52607c 100%);
-            box-shadow: 0px 0px 7px 0px linear-gradient(138deg, #1b2129 19%, #52607c 100%);
-    -webkit-filter: grayscale(25%);
-            filter: grayscale(25%);
-  }
 }
 
 @-webkit-keyframes expertise-overlay {
