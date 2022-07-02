@@ -40,18 +40,18 @@
     </div>
     <div class="container__contact-main">
       <form class="form-contact" id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
-        action="https://formspree.io/f/{form_id}" method="post">
+        action="https://formspree.io/f/mayvzrob" method="post">
         <div class="form-contact-container">
           <label for="name">Prénom & Nom</label>
-          <input type="text" name="name" id="">
+          <input type="text" name="name" id=""required>
         </div>
         <div class="form-contact-container">
-          <label for="mail">Adresse email</label>
-          <input type="email">
+          <label for="email">Adresse email</label>
+          <input type="email" name="email" required>
         </div>
         <div class="form-contact-container">
           <label for="message">Message</label>
-          <textarea name="message" id="" cols="30" rows="7"></textarea>
+          <textarea name="message" id="" cols="30" rows="7" required></textarea>
         </div>
         <div class="form-btn">
           <input  type="submit" value="ENVOYER À SARAH !">

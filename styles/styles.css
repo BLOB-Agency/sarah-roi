@@ -772,6 +772,99 @@ header nav a {
   font-weight: 600;
 }
 
+.container__modal {
+  margin: 5% 4%;
+  width: 90%;
+}
+
+.container__modal .modal-production {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0%;
+  left: 00%;
+  background-color: black;
+  gap: 10%;
+  margin-bottom: 15px;
+}
+
+.container__modal .modal-production-img {
+  width: 40% !important;
+  overflow: hidden;
+}
+
+.container__modal .modal-production-img img {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container__modal .modal-production aside {
+  width: 50% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__modal .modal-production aside h3 {
+  font-weight: 600;
+  font-size: 24px;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.container__modal .modal-production aside span {
+  font-size: 18px;
+}
+
+.container__modal .modal-production aside em {
+  font-weight: 500;
+}
+
+.container__modal .modal-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container__modal .modal-btn a {
+  width: 50% !important;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  padding: 10px 5px;
+  font-weight: 500;
+}
+
+.container__modal .modal-btn a:hover {
+  background: linear-gradient(138deg, #1b2129 19%, #52607c 100%);
+  color: white;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+}
+
 footer {
   background-color: #1b2129;
   display: -webkit-box;
@@ -802,6 +895,22 @@ footer .icon:hover {
   width: 100%;
   height: 100px;
   background-color: #1b2129;
+}
+
+.box-img {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+}
+
+.box-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 300px;
+  height: auto;
+  position: relative;
+  image-orientation: 90deg;
 }
 
 .hidden {
@@ -854,21 +963,5 @@ footer .icon:hover {
   100% {
     opacity: 100%;
   }
-}
-
-.box-img {
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 55%;
-}
-
-.box-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-width: 300px;
-  height: auto;
-  position: relative;
-  image-orientation: 90deg;
 }
 /*# sourceMappingURL=styles.css.map */
