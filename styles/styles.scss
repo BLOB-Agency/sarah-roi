@@ -401,6 +401,10 @@ header {
       width: 30%;
       margin-top: 40px;
       min-width: 250px;
+      a{
+        text-decoration: none;
+      }
+
       &-img{
         overflow: hidden;
         img{
@@ -543,7 +547,7 @@ header {
       }
     }
   }
-  &__modal{
+  &__prod{
     margin: 5% 4%;
     // margin: 0;
     // z-index: 6;
@@ -553,7 +557,7 @@ header {
     // left: 50%;
     // transform: translate(-50%, -50%);
     width: 90%;
-    .modal-production{
+    .prod-box{
       display: flex;
       top: 0%;
       left: 00%;
@@ -590,7 +594,7 @@ header {
           }
         }
     }
-    .modal-btn{
+    .prod-btn{
       display: flex;
       justify-content: flex-end;
       

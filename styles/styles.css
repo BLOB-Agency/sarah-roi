@@ -551,6 +551,10 @@ header nav a {
   min-width: 250px;
 }
 
+.container__production .box-production a {
+  text-decoration: none;
+}
+
 .container__production .box-production-img {
   overflow: hidden;
 }
@@ -772,12 +776,12 @@ header nav a {
   font-weight: 600;
 }
 
-.container__modal {
+.container__prod {
   margin: 5% 4%;
   width: 90%;
 }
 
-.container__modal .modal-production {
+.container__prod .prod-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,12 +792,12 @@ header nav a {
   margin-bottom: 15px;
 }
 
-.container__modal .modal-production-img {
+.container__prod .prod-box-img {
   width: 40% !important;
   overflow: hidden;
 }
 
-.container__modal .modal-production-img img {
+.container__prod .prod-box-img img {
   width: 100%;
   overflow: hidden;
   height: auto;
@@ -801,7 +805,7 @@ header nav a {
      object-fit: cover;
 }
 
-.container__modal .modal-production aside {
+.container__prod .prod-box aside {
   width: 50% !important;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,22 +819,22 @@ header nav a {
           justify-content: space-between;
 }
 
-.container__modal .modal-production aside h3 {
+.container__prod .prod-box aside h3 {
   font-weight: 600;
   font-size: 24px;
   -webkit-margin-after: 0;
           margin-block-end: 0;
 }
 
-.container__modal .modal-production aside span {
+.container__prod .prod-box aside span {
   font-size: 18px;
 }
 
-.container__modal .modal-production aside em {
+.container__prod .prod-box aside em {
   font-weight: 500;
 }
 
-.container__modal .modal-btn {
+.container__prod .prod-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,7 +843,7 @@ header nav a {
           justify-content: flex-end;
 }
 
-.container__modal .modal-btn a {
+.container__prod .prod-btn a {
   width: 50% !important;
   text-decoration: none;
   background-color: white;
@@ -851,7 +855,7 @@ header nav a {
   font-weight: 500;
 }
 
-.container__modal .modal-btn a:hover {
+.container__prod .prod-btn a:hover {
   background: linear-gradient(138deg, #1b2129 19%, #52607c 100%);
   color: white;
 }
