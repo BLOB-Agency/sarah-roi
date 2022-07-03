@@ -185,7 +185,7 @@ header nav a {
   position: absolute;
   height: 2px;
   width: 35px;
-  background: white;
+  background: #262f41;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: 0.25s ease-in-out;
@@ -538,7 +538,7 @@ header nav a {
 
 @media only screen and (max-width: 768px) {
   .container .box-theme {
-    width: 40%;
+    width: 45%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -546,7 +546,7 @@ header nav a {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 600px) {
   .container .box-theme {
     width: auto;
   }
@@ -613,6 +613,7 @@ header nav a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -672,6 +673,26 @@ header nav a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 900px) {
+  .container__production .box-production {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container__production {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__production .box-production {
+    width: 70% !important;
+  }
 }
 
 .container__production .box-production {
@@ -734,6 +755,16 @@ header nav a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container__reference-left {
+    background-image: url("../medias/references/references.jpg");
+  }
+  .container__reference-left .box-reference {
+    background-color: transparent !important;
+    border: solid 2px black;
+  }
 }
 
 .container__reference-left .bottom {
@@ -819,6 +850,12 @@ header nav a {
      object-fit: cover;
 }
 
+@media only screen and (max-width: 600px) {
+  .container__reference-right {
+    display: none;
+  }
+}
+
 .container__contact {
   margin: 4%;
 }
@@ -830,6 +867,14 @@ header nav a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media only screen and (max-width: 900px) {
+  .container__contact-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .container__contact-title span {
@@ -845,6 +890,51 @@ header nav a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+  .container__contact-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container__contact-main aside {
+    width: 90% !important;
+    margin: 15px;
+  }
+  .container__contact-main aside h3, .container__contact-main aside span {
+    color: white;
+  }
+  .container__contact-main aside span {
+    font-weight: 500;
+  }
+  .container__contact-main aside h3 {
+    text-align: center;
+  }
+  .container__contact-main .form-contact {
+    width: 80% !important;
+    background-image: url("../medias/contact/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container__contact-main .form-contact label {
+    font-weight: 500;
+    background-color: #00000082;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 5px 0;
+  }
 }
 
 .container__contact-main aside {
@@ -905,10 +995,12 @@ header nav a {
   height: 30px;
 }
 
-.container__contact-main .form-contact .form-btn {
-  top: 15%;
-  left: -20%;
-  position: relative;
+@media only screen and (min-width: 900px) {
+  .container__contact-main .form-contact .form-btn {
+    top: 15%;
+    left: -20%;
+    position: relative;
+  }
 }
 
 .container__contact-main .form-contact .form-btn input {
@@ -1060,6 +1152,12 @@ footer .icon:hover {
   height: auto;
   position: relative;
   image-orientation: 90deg;
+}
+
+@media only screen and (max-width: 900px) {
+  .box-img img {
+    display: none !important;
+  }
 }
 
 .navMenu {
