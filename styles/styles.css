@@ -609,10 +609,9 @@ header nav a {
   .container__country aside {
     width: 100% !important;
     background-image: url("../medias/meet/earth-1617121.jpg");
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     text-align: center;
     -webkit-box-align: center;
@@ -995,6 +994,11 @@ header nav a {
   height: 30px;
 }
 
+.container__contact-main .form-contact .form-btn {
+  background-color: white !important;
+  border-radius: none !important;
+}
+
 @media only screen and (min-width: 900px) {
   .container__contact-main .form-contact .form-btn {
     top: 15%;
@@ -1004,7 +1008,7 @@ header nav a {
 }
 
 .container__contact-main .form-contact .form-btn input {
-  padding: 20px 20px;
+  padding: 20px 20px !important;
   color: black;
   font-weight: 600;
 }
