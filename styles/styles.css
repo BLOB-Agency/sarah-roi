@@ -107,6 +107,12 @@ header nav a {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 768px) {
+  .container h2 {
+    text-align: center;
+  }
+}
+
 .container-contact-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,6 +419,27 @@ header nav a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .container__expertise article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container__expertise article .legend {
+    width: auto;
+  }
+  .container__expertise article .img {
+    width: auto;
+    height: 400px;
+  }
+}
+
 .container__hero-meet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,10 +460,15 @@ header nav a {
           justify-content: flex-end;
   background-color: #1b2129;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 35%;
   -webkit-box-shadow: -13px -1px 1px #262f41;
           box-shadow: -13px -1px 1px #262f41;
+}
+
+@media only screen and (max-width: 768px) {
+  .container__hero-meet .circle-bg {
+    width: 65%;
+  }
 }
 
 .container__hero-meet .circle-bg img {
@@ -484,6 +516,14 @@ header nav a {
   gap: 5%;
 }
 
+@media only screen and (max-width: 768px) {
+  .container__theme {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .container .box-theme {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,6 +536,22 @@ header nav a {
   margin-top: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .container .box-theme {
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container .box-theme {
+    width: auto;
+  }
+}
+
 .container .box-theme-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,6 +560,16 @@ header nav a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .box-theme-header {
+    display: block;
+    text-align: center;
+  }
+  .container .box-theme-header h3 {
+    margin-left: 0 !important;
+  }
 }
 
 .container .box-theme-header h3 {
@@ -524,10 +590,37 @@ header nav a {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 768px) {
+  .container .box-theme-legend {
+    width: 80%;
+  }
+}
+
 .container__country {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .container__country-img {
+    display: none;
+  }
+  .container__country aside {
+    width: 100% !important;
+    background-image: url("../medias/meet/earth-1617121.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container__country aside p {
+    font-weight: 500 !important;
+  }
 }
 
 .container__country aside {
@@ -1009,9 +1102,7 @@ footer .icon:hover {
 }
 
 .navMenu a:hover {
-  background: linear-gradient(310deg, #1b2129 19%, #52607c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #262f41;
 }
 
 .hidden {
