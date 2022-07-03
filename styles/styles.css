@@ -1088,9 +1088,27 @@ header nav a {
   margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .container__prod .prod-box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .container__prod .prod-box-img {
   width: 40% !important;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .container__prod .prod-box-img {
+    width: 80% !important;
+  }
 }
 
 .container__prod .prod-box-img img {
@@ -1113,6 +1131,12 @@ header nav a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .container__prod .prod-box aside {
+    width: 80% !important;
+  }
 }
 
 .container__prod .prod-box aside h3 {
@@ -1139,8 +1163,21 @@ header nav a {
           justify-content: flex-end;
 }
 
+@media only screen and (max-width: 768px) {
+  .container__prod .prod-btn {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .container__prod .prod-btn a {
+    width: 90% !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .container__prod .prod-btn a {
-  width: 50% !important;
   text-decoration: none;
   background-color: white;
   color: black;
@@ -1151,7 +1188,22 @@ header nav a {
   font-weight: 500;
 }
 
-.container__prod .prod-btn a:hover {
+@media only screen and (max-width: 768px) {
+  .container__prod .prod-btn a {
+    width: 80% !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container__prod .prod-btn a {
+    width: 50% !important;
+  }
+}
+
+.container__prod .prod-btn:hover {
   background: linear-gradient(138deg, #1b2129 19%, #52607c 100%);
   color: white;
 }

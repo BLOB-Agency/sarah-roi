@@ -768,10 +768,19 @@ header {
       background-color: black;
       gap: 10%;
       margin-bottom: 15px;
+      @media only screen and (max-width: 768px){
+        flex-direction: column !important;
+        align-items: center;
+        
+        
+      }
 
       &-img {
         width: 40% !important;
         overflow: hidden;
+        @media only screen and (max-width: 768px){
+          width: 80%!important;
+        }
         img {
           width: 100%;
           overflow: hidden;
@@ -784,6 +793,9 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media only screen and (max-width: 768px){
+          width: 80% !important;
+        }
         h3 {
           font-weight: 600;
           font-size: 24px;
@@ -800,9 +812,17 @@ header {
     .prod-btn {
       display: flex;
       justify-content: flex-end;
+      @media only screen and (max-width: 768px){
+        
+          justify-content: center !important;
+        
+        a{
+          width: 90% !important;
+          align-self: center;
+        }
+      }
 
       a {
-        width: 50% !important;
         text-decoration: none;
         background-color: white;
         color: black;
@@ -810,14 +830,25 @@ header {
         text-align: center;
         padding: 10px 5px;
         font-weight: 500;
+        @media only screen and (max-width: 768px){
+          width: 80% !important;
+          align-self: center;
+        }
+        @media only screen and (min-width: 768px){
+
+          width: 50% !important;
+        }
+        
+      }
         &:hover {
           background: $gradient;
           color: white;
         }
       }
+      
     }
   }
-}
+
 footer {
   background-color: $primary;
   display: flex;
