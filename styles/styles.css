@@ -1188,6 +1188,11 @@ header nav a {
   font-weight: 500;
 }
 
+.container__prod .prod-btn a:hover {
+  background: linear-gradient(138deg, #1b2129 19%, #52607c 100%);
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .container__prod .prod-btn a {
     width: 80% !important;
@@ -1201,11 +1206,6 @@ header nav a {
   .container__prod .prod-btn a {
     width: 50% !important;
   }
-}
-
-.container__prod .prod-btn:hover {
-  background: linear-gradient(138deg, #1b2129 19%, #52607c 100%);
-  color: white;
 }
 
 footer {

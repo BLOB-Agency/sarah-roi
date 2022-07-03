@@ -17,6 +17,11 @@ const displayProdData = (data ) => {
   </aside>
     `
 }
+const displayProdLink = (data) => {
+  return `
+  <a  href="../modules/${data.link}" target= "_blank">CLIQUEZ ICI POUR DÉCOUVRIR LE MODULE E-LEARNING</a>
+  `
+}
 
 const getProdData = () => {
     const boxLearning = document.querySelectorAll('.box-production');
@@ -26,10 +31,11 @@ const getProdData = () => {
             const title = box.querySelector('h3').textContent;
             learningDatas.forEach(data => {
                 if(data.title === title){
-                    console.log(data)
-                    prodBox.innerHTML += displayProdData(data)
-                    containerProd.classList.remove("hidden")
-                    containerLearning.classList.add("hidden")
+                    console.log(data);
+                    prodBox.innerHTML += displayProdData(data);
+                    prodBoxLink.innerHTML += displayProdLink(data);
+                    containerProd.classList.remove("hidden");
+                    containerLearning.classList.add("hidden");
                 }
             })
         })
@@ -38,6 +44,7 @@ const getProdData = () => {
 const arrowFunc = () => {
     containerProd.classList.add("hidden");
     prodBox.innerHTML = " ";
+    prodBoxLink.innerHTML = " ";
     containerLearning.classList.remove("hidden");
 }
 
