@@ -572,6 +572,14 @@ header nav a {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .container__theme {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .container .box-theme {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,7 +604,10 @@ header nav a {
 
 @media only screen and (max-width: 600px) {
   .container .box-theme {
-    width: auto;
+    width: 90%;
+    padding: 15px 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
   }
 }
 
@@ -631,7 +642,7 @@ header nav a {
 }
 
 .container .box-theme-legend {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .container .box-theme-legend strong {
@@ -806,11 +817,15 @@ header nav a {
 
 @media only screen and (max-width: 600px) {
   .container__reference-left {
+    gap: 0;
     background-image: url("../medias/references/references.jpg");
   }
   .container__reference-left .box-reference {
     background-color: transparent !important;
     border: solid 2px black;
+  }
+  .container__reference-left .bottom {
+    gap: 0px !important;
   }
 }
 
@@ -846,7 +861,7 @@ header nav a {
 .container__reference-left .box-reference h3,
 .container__reference-left .box-reference span,
 .container__reference-left .box-reference a {
-  color: black;
+  color: black !important;
 }
 
 .container__reference-left .box-reference a {
@@ -856,7 +871,16 @@ header nav a {
 }
 
 .container__reference-left .box-reference a:hover {
-  color: #52607c;
+  color: #52607c !important;
+}
+
+.container__reference-left .box-reference em {
+  color: black;
+  font-style: italic;
+}
+
+.container__reference-left .box-reference em, .container__reference-left .box-reference span {
+  font-weight: 400;
 }
 
 .container__reference-left .box-reference-header {
@@ -1324,6 +1348,16 @@ footer .icon:hover {
   }
   100% {
     opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-theme {
+    background-image: url("../medias/meet/gino-0gTtEsOBJDo-unsplash.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -411,6 +411,7 @@ header {
       }
     }
   }
+  
   &__theme {
     display: flex;
     flex-direction: row;
@@ -419,20 +420,30 @@ header {
     @media only screen and (max-width: 768px){
       justify-content: space-between;
     }
+    @media only screen and (max-width: 600px){
+      justify-content: center;
+      
+    }
   }
   .box-theme {
     display: flex;
     flex-direction: column;
     width: 30%;
     margin-top: 50px;
+   
+      
     @media only screen and (max-width: 768px){
+      
       width: 45%;
       align-items: center;
       text-align: center;
       
     }
     @media only screen and (max-width: 600px){
-      width: auto;
+      width: 90%;
+      padding: 15px 5px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
       
     }
     &-header {
@@ -456,7 +467,9 @@ header {
       }
     }
     &-legend {
-      font-size: 16px;
+      font-size: 18px;
+      
+      
       strong {
         font-weight: 500;
       }
@@ -576,11 +589,16 @@ header {
       justify-content: space-between;
       gap: 10px;
       @media only screen and (max-width: 600px){
+        gap: 0;
         background-image: url("../medias/references/references.jpg");
         .box-reference{
           background-color: transparent!important;
           border: solid 2px black;
         }
+        .bottom{
+          gap: 0px !important;
+        }
+
       }
       .bottom {
         display: flex;
@@ -601,15 +619,22 @@ header {
         h3,
         span,
         a {
-          color: black;
+          color: black !important;
         }
         a {
           font-weight: 500;
           font-size: 16px;
           text-decoration: none;
           &:hover {
-            color: $secondary;
+            color: $secondary !important;
           }
+        }
+        em{
+          color: black;
+          font-style: italic;
+        }
+        em, span{
+          font-weight: 400;
         }
         &-header {
           display: flex;
@@ -628,6 +653,7 @@ header {
         &-legend {
           display: flex;
           flex-direction: column;
+         
         }
       }
     }
@@ -930,4 +956,14 @@ footer {
   100% {
     opacity: 100%;
   }
+}
+.bg-theme{
+  @media only screen and (max-width: 600px){
+    background-image: url("../medias/meet/gino-0gTtEsOBJDo-unsplash.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
 }
