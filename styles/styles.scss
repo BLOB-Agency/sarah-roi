@@ -263,22 +263,40 @@ header {
           }
         }
       }
+      
       .img {
         width: 65%;
         overflow: hidden;
         animation: box-pop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         position: relative;
         height: auto !important;
-        background-image: none;
         @media only screen and (max-width: 768px){
-          background-color: rgba(27, 33, 41, 0.8);
-          padding: 10px;
+          background-size: cover;
+          filter: grayscale(100%);
+          h4{
+            margin: 0;
+            padding-top: 15px;
+          }
           margin: 20px 0;
-          
-          
+          border-radius: 15px;
+          &-1{
+            background-image: url("../medias/index/pexels-dani-hart-3719037.jpg");
+          }
+          &-2{
+            background-image: url("../medias/index/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg");
+            background-position: center;
+          }
+          &-3{
+            background-image: url("../medias/index/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg");
+            background-position: center;
+          }
         }
+
+        
         &-overlay {
           position: relative;
+          background-color: rgba(27, 33, 41, 0.8) ;
+          
           @media only screen and (min-width: 768px){
             position: absolute;
             background-color: rgba(27, 33, 41, 0.8);
@@ -743,6 +761,7 @@ header {
           width: 90%;
           label {
             font-weight: 500;
+            width: 50%;
           }
           input,
           textarea {
@@ -767,6 +786,7 @@ header {
             background-color: white !important;
             border: none !important;
             border-radius: 0 !important;
+            appearance: none;
           }
         }
       }
@@ -959,10 +979,9 @@ footer {
 }
 .bg-theme{
   @media only screen and (max-width: 600px){
-    background-image: url("../medias/meet/gino-0gTtEsOBJDo-unsplash.jpg") !important;
+    background-image: url("../medias/meet/adam-birkett-_IrFSypwykg-unsplash.jpg") !important;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
     background-position: center;
   }
   

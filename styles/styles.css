@@ -330,19 +330,36 @@ header nav a {
           animation: box-pop 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   position: relative;
   height: auto !important;
-  background-image: none;
 }
 
 @media only screen and (max-width: 768px) {
   .container__expertise article .img {
-    background-color: rgba(27, 33, 41, 0.8);
-    padding: 10px;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
     margin: 20px 0;
+    border-radius: 15px;
+  }
+  .container__expertise article .img h4 {
+    margin: 0;
+    padding-top: 15px;
+  }
+  .container__expertise article .img-1 {
+    background-image: url("../medias/index/pexels-dani-hart-3719037.jpg");
+  }
+  .container__expertise article .img-2 {
+    background-image: url("../medias/index/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg");
+    background-position: center;
+  }
+  .container__expertise article .img-3 {
+    background-image: url("../medias/index/charlesdeluvio-rRWiVQzLm7k-unsplash.jpg");
+    background-position: center;
   }
 }
 
 .container__expertise article .img-overlay {
   position: relative;
+  background-color: rgba(27, 33, 41, 0.8);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1054,6 +1071,7 @@ header nav a {
 
 .container__contact-main .form-contact-container label {
   font-weight: 500;
+  width: 50%;
 }
 
 .container__contact-main .form-contact-container input,
@@ -1081,6 +1099,9 @@ header nav a {
   background-color: white !important;
   border: none !important;
   border-radius: 0 !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .container__prod {
@@ -1353,10 +1374,9 @@ footer .icon:hover {
 
 @media only screen and (max-width: 600px) {
   .bg-theme {
-    background-image: url("../medias/meet/gino-0gTtEsOBJDo-unsplash.jpg") !important;
+    background-image: url("../medias/meet/adam-birkett-_IrFSypwykg-unsplash.jpg") !important;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
     background-position: center;
   }
 }
